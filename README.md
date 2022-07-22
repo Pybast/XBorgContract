@@ -1,6 +1,8 @@
-# Sample Hardhat Project
+# ANKH Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This is an official deployment for the ANKH NFT project aimed at giving confidence to the community and reveal any potential bugs or optimization if there exist any.
+
+Please contact us at contact@nefture.com if you have any comments on this implementation.
 
 Try running some of the following tasks:
 
