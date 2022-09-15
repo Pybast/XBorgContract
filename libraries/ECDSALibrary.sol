@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (utils/cryptography/ECDSA.sol)
-// Added recover for arbitrary bytes by Nefture
 
 pragma solidity 0.8.11;
 
@@ -106,8 +105,6 @@ library ECDSALibrary {
 
     /**
      * @dev Overload of {ECDSA-recover} that receives unhashed bytes
-     *
-     * Added for Nefturians collection
      */
     function recover(bytes calldata data, bytes calldata signature) public pure returns (address) {
         bytes32 hash = keccak256(abi.encodePacked("\x19Ethereum Signed Message:\n32", keccak256(data)));

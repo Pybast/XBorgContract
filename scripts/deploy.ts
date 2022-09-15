@@ -6,15 +6,15 @@ async function main() {
   const ecdsa = await ECDSA.deploy();
   await ecdsa.deployed();
 
-  const ANKH = await ethers.getContractFactory("Ankh", {
+  const XBORG = await ethers.getContractFactory("Xborg", {
     libraries: {
       ECDSALibrary: ecdsa.address
     }
   });
-  const ankh = await ANKH.deploy();
-  await ankh.deployed();
+  const xborg = await XBORG.deploy();
+  await xborg.deployed();
 
-  console.log("Ankh contract deployed on:", ankh.address);
+  console.log("Xborg contract deployed on:", xborg.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
